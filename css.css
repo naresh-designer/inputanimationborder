@@ -1,0 +1,53 @@
+body{
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox{
+    width: 350px;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 100px;
+}
+
+.box{
+    position: relative;
+    margin-left: 200px;
+}
+
+.box input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-color: #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 20px;
+    padding: 10px 0;
+    color: #fff;
+    transition: .5s;
+}
+
+.box input:focus ~ label, .box input:valid ~ label{
+    top: -20px;
+    left: 0px;
+    padding: 2px 10px;
+    background-color: aqua;
+    color: blueviolet;
+    font-size: 12px;
+
+}
